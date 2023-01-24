@@ -15,6 +15,11 @@ public class TodoController {
         this.jsonPlaceholderService = jsonPlaceholderService;
     }
 
+    @GetMapping("/is-live")
+    public String isLive() {
+        return "Yes Its Live :)";
+    }
+
 
     @GetMapping("/fetch")
     public String fetchTodos() {
@@ -24,8 +29,9 @@ public class TodoController {
 
 //    @GetMapping("/getTodos/{$id}")
 
-    @GetMapping("/push")
-    public String pushTodos() {
-        return null;
-    }
+//    @GetMapping("/push")
+//    public String pushTodos() {
+//        String response = jsonPlaceholderService.pushTodos();
+//        return response;
+//    }
 }
